@@ -1,0 +1,44 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Mi Proyecto
+    link(rel="stylesheet", href="../public/css/styles.css")
+  body
+    header
+      h1 Bienvenido a Mi Proyecto
+    main
+      section
+        h2 Acerca de Nosotros
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit turpis id odio volutpat, sit amet aliquam libero luctus.
+      section
+        h2 Nuestros Servicios
+        ul
+          li Servicio 1
+          li Servicio 2
+          li Servicio 3
+      section
+        h2 Contacto
+        form(action="/contacto", method="post")
+          input(type="text", name="nombre", placeholder="Tu Nombre")
+          input(type="email", name="correo", placeholder="Tu Correo Electrónico")
+          textarea(name="mensaje", placeholder="Tu Mensaje")
+          button(type="submit") Enviar
+      section
+        h2 Testimonios
+        p Aquí puedes encontrar lo que nuestros clientes dicen sobre nosotros:
+        ul
+          li Testimonio 1
+          li Testimonio 2
+          li Testimonio 3
+      section
+        h2 Últimas Noticias
+        p Lee nuestras últimas noticias y actualizaciones:
+        ul
+          li Noticia 1
+          li Noticia 2
+          li Noticia 3
+    footer
+      p Derechos de autor © 2024 - Mi Proyecto
+    script(src="scripts.js")
